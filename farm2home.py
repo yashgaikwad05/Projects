@@ -1,11 +1,4 @@
 # Farm2Home_app.py
-# A simple, production-ready Streamlit app for a Farm2Home marketplace.
-# Features:
-# - Multilingual UI (English, Hindi, Marathi, Tamil)
-# - Product grid with search, category & price filters
-# - Cart & checkout (mock) with rupee pricing
-# - Lightweight Admin mode to add inventory items
-
 from dataclasses import dataclass
 from typing import List, Dict
 import streamlit as st
@@ -14,7 +7,7 @@ import uuid
 # App Config
 st.set_page_config(page_title="Farm2Home", page_icon="🌾", layout="wide")
 
-# i18n: Strings
+# Strings
 STRINGS = {
     "en": {
         "title": "Farm2Home",
@@ -397,4 +390,5 @@ with st.expander(f"🛠 {t('admin_mode')}"):
 
 # Footer
 st.markdown("---")
+
 st.caption(t("footer"))
